@@ -12,9 +12,11 @@ Windows.
 
 ```sh
 # Mac
+brew install yarn
 brew install --cask docker
 
 # Windows
+winget install Yarn.Yarn
 winget install Docker.DockerDesktop
 ```
 
@@ -22,15 +24,18 @@ winget install Docker.DockerDesktop
 > [Windows WSL](https://docs.docker.com/desktop/setup/install/windows-install/)
 > layer installed.
 
-Once docker is installed, simply run docker desktop. This will setup the docker
-daemon. To validate that you have installed it correctly, simply run
+Once docker and yarn are installed, simply run docker desktop from your
+application list or your start menu depending on your operating system. This
+will setup the docker daemon. To validate that you have installed everything
+correctly, simply run
 
 ```sh
+yarn --version
 docker --version
 docker compose version
 ```
 
-If you get an output, then you have successfully installed docker correctly.
+If you get an output, then you are ready for the next step.
 
 ## Usage
 
