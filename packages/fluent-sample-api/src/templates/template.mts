@@ -6,16 +6,26 @@ export interface Template {
 }
 
 export class TemplateBuilder {
-  private _template: Template;
+  private $template: Template;
 
   public constructor() {
-    this._template = {
+    this.$template = {
       id: "",
       name: "",
     };
   }
 
+  public id(val: string) {
+    this.$template.id = val;
+    return this;
+  }
+
+  public name(val: string) {
+    this.$template.name = val;
+    return this;
+  }
+
   public build() {
-    return cloneDeep(this._template);
+    return cloneDeep(this.$template);
   }
 }
