@@ -34,6 +34,15 @@ services:
     ports:
       - 8080:8080
     env_file: .env
+  fluent-sample-api:
+    image: node:lts
+    volumes:
+      - .:/usr/dev
+    working_dir: /usr/dev
+    ports:
+      - 3000:3000
+    command:
+      npm --workspace @anthony-bonta-gaf-energy/fluent-sample-api run debug
 volumes:
   fluent-manager-db: { name: fluent-manager-db }
 networks:
