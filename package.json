@@ -1,12 +1,12 @@
 {
-    "name": "fluent-fe",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "start": "kotlin ./config/fluent-deploy-docker-compose-25.0.0.2.main.kts deploy"
-    },
-    "dependencies": {
-        
-    },
-    "packageManager": "yarn@4.6.0"
+  "name": "fluent-fe",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "kotlin ./config/fluent-deploy-docker-compose-25.0.0.2.main.kts deploy"
+  },
+  "packageManager": "yarn@4.6.0",
+  "devDependencies": {
+    "prettier": "^3.5.1"
+  }
 }
