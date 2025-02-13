@@ -47,3 +47,9 @@ docker compose up
 # Username: admin@fake.email
 # Password: admin-pa73305word
 ```
+
+When you're ready to stop the instance.
+
+```sh
+docker compose down
+```
