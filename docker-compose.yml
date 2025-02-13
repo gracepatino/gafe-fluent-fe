@@ -2,7 +2,7 @@ services:
   frontend:
     container_name: fluent-manager-frontend
     restart: always
-    image: public.ecr.aws/apryse/fluent-manager-frontend:${FLUENT_VERSION}
+    image: public.ecr.aws/apryse/fluent-manager-frontend:${FLUENT_MANAGER_VERSION}
     env_file: .env
     ports: ["80:8080"]
     depends_on: [backend]
@@ -12,7 +12,7 @@ services:
   backend:
     container_name: fluent-manager-backend
     restart: always
-    image: public.ecr.aws/apryse/fluent-manager-backend:${FLUENT_VERSION}
+    image: public.ecr.aws/apryse/fluent-manager-backend:${FLUENT_MANAGER_VERSION}
     env_file: .env
     depends_on: [db]
     logging:
@@ -21,12 +21,19 @@ services:
   db:
     container_name: fluent-manager-db
     restart: always
-    image: public.ecr.aws/apryse/fluent-manager-db:${FLUENT_VERSION}
+    image: public.ecr.aws/apryse/fluent-manager-db:${FLUENT_MANAGER_VERSION}
     volumes: ["fluent-manager-db:/var/lib/postgresql/data"]
     env_file: .env
     logging:
       driver: json-file
       options: { max-size: 50m, max-file: "3" }
+  engine:
+    container_name: fluent-engine
+    restart: always
+    image: public.ecr.aws/apryse/fluent-restful:${FLUENT_ENGINE_VERSION}
+    ports:
+      - 8080:8080
+    env_file: .env
 volumes:
   fluent-manager-db: { name: fluent-manager-db }
 networks:
