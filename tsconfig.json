@@ -1,0 +1,10 @@
+{
+  "extends": "./.config/.tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "packages",
+    "target": "esnext",
+    "paths": {}
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mts"],
+  "exclude": ["**/node_modules/**"]
+}
