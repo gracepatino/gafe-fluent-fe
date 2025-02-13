@@ -17,6 +17,7 @@
     "make": "yarn clean && yarn check && yarn test && yarn build"
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
     "@vitest/coverage-istanbul": "^3.0.5",
     "lerna": "^8.1.9",
     "prettier": "^3.5.1",
