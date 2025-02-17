@@ -1,0 +1,73 @@
+{
+	"proposal_data": {
+		"image_SRC": "https://www.gaf.energy/wp-content/uploads/2021/12/Timberline-Solar-B100_THP-635x425.jpg",
+		"homeowner": {
+			"name": "John Smith",
+			"address": "123 Main St, Anytown, USA"
+		},
+		"partner": {
+			"Company_name": "Roofers Acme",
+			"roofer": "Bill Patterson",
+			"email": "bpatt@yopmaill.com",
+			"address": "123 Second St, Anytown, USA",
+			"phone": "(123) 321-1222"
+		},
+		"valid_t": "01/18/2025",
+		"system_size": "26.68 kW",
+		"year_1_prod": "30,304 kWh",
+		"solar_energy_produced": [
+			{
+				"month": "January",
+				"value": 1413
+			},
+			{
+				"month": "February",
+				"value": 1852
+			},
+			{
+				"month": "March",
+				"value": 2158
+			},
+			{
+				"month": "April",
+				"value": 2890
+			},
+			{
+				"month": "May",
+				"value": 3254
+			},
+			{
+				"month": "June",
+				"value": 3982
+			},
+			{
+				"month": "July",
+				"value": 4239
+			},
+			{
+				"month": "August",
+				"value": 4013
+			},
+			{
+				"month": "September",
+				"value": 3568
+			},
+			{
+				"month": "October",
+				"value": 2406
+			},
+			{
+				"month": "November",
+				"value": 1560
+			},
+			{
+				"month": "December",
+				"value": 1238
+			}
+		],
+		"upfront_price": "$34,684",
+		"federal_ITC": "-$10,405",
+		"net_investment": "-$24,279",
+		"monthly_payment": "$237"
+	}
+}
